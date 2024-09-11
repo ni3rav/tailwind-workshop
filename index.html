@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="business">
+<html lang="en" data-theme="sunset">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,15 +12,60 @@
   <title>Tailwind Workshop 2</title>
 </head>
 
-<body>
+<body class="flex flex-col items-center">
+  <!-- !navbar -->
 
-  <nav class="h-[8vh] w-screen bg-base-300"></nav>
+  <!-- TODO: 1. Responsive 2. After a certain brekpoint, navbar should be converter to a dropdown, 3. Hover Effects, 4. How navbar is floating and what happens if z index is removed and explain z index and how it works -->
 
-  <div class="h-[92vh] w-screen bg-base-200"></div>
-  <div class="h-[85vh] w-screen bg-base-100"></div>
-  <footer class="h-[15vh] w-screen bg-base-300">
+  <nav
+    class="h-[8vh] w-[60vw] bg-base-100 flex flex-wrap text-xl items-center justify-center gap-16 z-50 fixed mt-6 rounded-full">
+    <a href="#">Home</a>
+    <a href="#">Team</a>
+    <a href="#">Events</a>
+    <a href="#">Hackathons</a>
+    <a href="#">Projects</a>
+    <a href="#">Leaderboard</a>
+    <a href="#">Blog</a>
+  </nav>
+  <!-- !navbar -->
 
+
+
+  <!-- !hero -->
+  <!-- TODO: 1. Adjust buttons, 2. Adjusting Hero Header text and Hero description -->
+  <div class="h-screen w-screen bg-base-200  flex flex-col items-center justify-center flex-wrap gap-4">
+
+    <button class="btn btn-ghost rounded-full px-8">Suggest an event✨</button>
+
+    <h1 class="text-7xl font-extraBold">For the Students, By the Students</h1>
+
+    <p class="w-3/5 text-center">Dive into the world of coding with ASPDC – where every student, regardless of
+      experience, finds a safe space to learn, grow, and innovate. Join us in exploring web development, AI, competitive
+      programming, and more!</p>
+
+    <div class="flex w-[30%]  items-center justify-center gap-2">
+
+      <button class="btn btn-outline btn-wide">Events</button>
+
+      <button class="btn btn-secondary btn-outline btn-wide">Leaderboard</button>
+
+    </div>
+
+  </div>
+  <!-- !hero -->
+
+  <!-- !secondary -->
+  <div class="h-[85vh] w-screen bg-base-300">
+    <!-- *let's keep it empty for now cuz there's going to be some good stuff in this thing -->
+  </div>
+  <!-- !secondary -->
+
+  <!-- !footer   -->
+  <footer class="h-[15vh] w-screen bg-base-200">
+    <!-- * This is the practice part make one by your self lol -->
   </footer>
+  <!-- !footer   -->
+
 </body>
 
 </html>
