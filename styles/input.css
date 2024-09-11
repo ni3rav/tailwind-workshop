@@ -6,4 +6,6 @@
 html,
 body {
   @apply font-sans; /* This applies the Montserrat font defined in config */
+  overflow-x: hidden;
 }
+
