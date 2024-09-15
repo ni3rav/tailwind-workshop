@@ -15,35 +15,42 @@
 <body class="flex flex-col items-center">
   <!-- !navbar -->
 
-  <!-- TODO: 1. Responsive 2. After a certain brekpoint, navbar should be converter to a dropdown, 3. Hover Effects, 4. How navbar is floating and what happens if z index is removed and explain z index and how it works -->
+  <!-- ?what did we do?: 1. created two separate navbars, one for screens below md breakpoint and other for md breakpoint onward, 2. added hover effect to navbar links along with tranitions to make it look smooth  3. fixed issues with width -->
 
   <nav
-    class="h-[8vh] w-[60vw] bg-base-100 flex flex-wrap text-xl items-center justify-center gap-16 z-50 fixed mt-6 rounded-full">
-    <a href="#">Home</a>
-    <a href="#">Team</a>
-    <a href="#">Events</a>
-    <a href="#">Hackathons</a>
-    <a href="#">Projects</a>
-    <a href="#">Leaderboard</a>
-    <a href="#">Blog</a>
+    class="h-[8vh] w-screen bg-base-100 text-xl items-center justify-center gap-16 z-50 fixed mt-6 rounded-full md:visible hidden md:flex"> 
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Home</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Team</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Events</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Hackathons</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Projects</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Leaderboard</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Blog</a>
+  </nav>
+  <nav
+    class="h-[8vh] w-screen bg-base-100 text-xl items-center justify-center gap-16 z-50 fixed mt-6 rounded-full md:hidden flex"> 
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Home</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Team</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Events</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Hackathons</a>
   </nav>
   <!-- !navbar -->
 
 
 
   <!-- !hero -->
-  <!-- TODO: 1. Adjust buttons, 2. Adjusting Hero Header text and Hero description -->
+   <!-- ?what did we do: 1. aligned h1 text to center and lowered size on smaller screens, 2. changed flex direction to column on screen smaller than sm and to row  -->
   <div class="h-screen w-screen bg-base-200  flex flex-col items-center justify-center flex-wrap gap-4">
 
     <button class="btn btn-ghost rounded-full px-8">Suggest an event✨</button>
 
-    <h1 class="text-7xl font-extraBold">For the Students, By the Students</h1>
+    <h1 class="text-center md:text-7xl text-6xl font-extraBold">For the Students, By the Students</h1>
 
     <p class="w-3/5 text-center">Dive into the world of coding with ASPDC – where every student, regardless of
       experience, finds a safe space to learn, grow, and innovate. Join us in exploring web development, AI, competitive
       programming, and more!</p>
 
-    <div class="flex w-[30%]  items-center justify-center gap-2">
+    <div class="flex w-[30%]  items-center justify-center gap-2 sm:flex-row flex-col">
 
       <button class="btn btn-outline btn-wide">Events</button>
 
@@ -55,14 +62,35 @@
   <!-- !hero -->
 
   <!-- !secondary -->
-  <div class="h-[85vh] w-screen bg-base-300">
-    <!-- *let's keep it empty for now cuz there's going to be some good stuff in this thing -->
+  <div class="h-[85vh] w-screen bg-base-300 flex flex-col items-center justify-center gap-16">
+    <!-- !feel free to play around wih daisy ui components -->
+    <h1 class="text-center md:text-7xl text-6xl font-extraBold">Feedback Recieved by Participants</h1>
+
+
+    <div class="stats stats-vertical lg:stats-horizontal shadow">
+      <div class="stat">
+        <div class="stat-title">Total Participants</div>
+        <div class="stat-value">43</div>
+        <div class="stat-desc">Sep 10th - Sep 12th</div>
+      </div>
+    
+      <div class="stat">
+        <div class="stat-title">Overall Raing</div>
+        <div class="stat-value">4.82</div>
+        <div class="stat-desc">Thank you very much</div>
+      </div>
+    
+
+    </div>
   </div>
   <!-- !secondary -->
 
   <!-- !footer   -->
-  <footer class="h-[15vh] w-screen bg-base-200">
+  <footer class="h-[15vh] w-screen footer footer-center bg-base-200 text-base-content p-4 text-2xl font-black">
     <!-- * This is the practice part make one by your self lol -->
+    <aside>
+      <p>Presented with 😻 by ASPDC Web Domain Team</p>
+    </aside>
   </footer>
   <!-- !footer   -->
 
