@@ -15,7 +15,7 @@
 <body class="flex flex-col items-center">
   <!-- !navbar -->
 
-  <!-- ?what did we do?: 1. created two separate navbars, one for screens below md breakpoint and other for md breakpoint onward, 2. added hover effect to navbar links along with tranitions to make it look smooth  3. fixed issues with width -->
+  <!-- ?what did we do?: 1. created three separate navbars, one for screens below sm an one for between sm and md breakpoint and other for md breakpoint onward, 2. added hover effect to navbar links along with tranitions to make it look smooth  3. fixed issues with width -->
 
   <nav
     class="h-[8vh] w-screen bg-base-100 text-xl items-center justify-center gap-16 z-50 fixed mt-6 rounded-full md:visible hidden md:flex"> 
@@ -34,6 +34,12 @@
     <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Events</a>
     <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Hackathons</a>
   </nav>
+  <nav
+    class="h-[8vh] w-screen bg-base-100 text-xl items-center justify-center gap-16 z-50 fixed mt-6 rounded-full sm:hidden flex"> 
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Home</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Team</a>
+    <a href="#" class="hover:text-primary transition-all duration-500 ease-in-out">Events</a>
+  </nav>
   <!-- !navbar -->
 
 
@@ -44,9 +50,9 @@
 
     <button class="btn btn-ghost rounded-full px-8">Suggest an event✨</button>
 
-    <h1 class="text-center md:text-7xl text-6xl font-extraBold">For the Students, By the Students</h1>
+    <h1 class="text-center md:text-7xl text-5xl font-extraBold">For the Students, By the Students</h1>
 
-    <p class="w-3/5 text-center">Dive into the world of coding with ASPDC – where every student, regardless of
+    <p class="w-3/5 text-center text-sm md:text-md">Dive into the world of coding with ASPDC – where every student, regardless of
       experience, finds a safe space to learn, grow, and innovate. Join us in exploring web development, AI, competitive
       programming, and more!</p>
 

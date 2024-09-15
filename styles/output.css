@@ -1550,6 +1550,10 @@ html {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -1578,6 +1582,16 @@ html {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-extraBold {
@@ -1620,6 +1634,18 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 768px) {
+  .md\:textarea-md {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    line-height: 2;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:stats-horizontal {
     grid-auto-flow: column;
@@ -1649,6 +1675,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1667,9 +1697,18 @@ body {
     display: none;
   }
 
+  .md\:text-pretty {
+    text-wrap: pretty;
+  }
+
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
